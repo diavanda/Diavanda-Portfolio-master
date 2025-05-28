@@ -1,0 +1,51 @@
+---
+import Banner from '../components/Banner.astro'
+import Navbar from '../components/Navbar.astro'
+import Hero from '../components/Hero.astro'
+import LatestWork from '../components/LatestWork.astro'
+import About from '../components/About.astro'
+import Works from '../components/Works.astro'
+import Testimonials from '../components/Testimonials.astro'
+import Contact from '../components/Contact.astro'
+import Footer from '../components/Footer.astro'
+
+const { title } = Astro.props
+---
+<script src="../scripts/menu.js"></script>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+  
+    <meta property="og:title" content="Diavanda's Portfolio"/>
+    <meta property="og:image" content="https://diavanda.com/Thumbnail.jpg"/>
+    <meta property="og:description" content="Step into the creative realm of Diavanda's Portfolio, where design innovation meets front-end wizardry. Explore the artistry of UI/UX design and web development."/>
+    <meta property="og:url" content="https://diavanda.com/"/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Diavanda's Portfolio"/>
+    <meta property="twitter:description" content="Step into the creative realm of Diavanda's Portfolio, where design innovation meets front-end wizardry. Explore the artistry of UI/UX design and web development."/>
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />	
+
+    <title>{title}</title>
+    <link rel="icon" type="image/x-icon" href="Desktop/Logo.svg">
+  </head>
+  <body>
+    <Banner />
+    <Navbar />
+   
+    <main>
+        <slot />
+        <Hero />
+        <LatestWork />
+        <Works />
+        <About />
+        <Testimonials />
+        <Contact />
+        
+    </main>
+    <Footer />
+  </body>
+</html>

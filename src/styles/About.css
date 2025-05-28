@@ -1,0 +1,275 @@
+.about {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 32px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    text-align: left;
+    
+}
+
+.container-card {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.text {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.separator {
+    flex: 1;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), rgba(128, 128, 128, 0.3);
+    height: 1px;
+}
+
+.frame-wrapper {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 40px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame-group {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.about-me-title {
+    position: relative;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+    color: rgba(60, 60, 67, 0.6);
+    text-align: left;
+    font-size: 22px;
+}
+
+.number {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: -0.4px;
+    line-height: 68px;
+}
+
+.me {
+    margin: 0;
+}
+
+.title-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    color: #3c3c3c; 
+}
+
+.description {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    line-height: 22px;
+}
+
+.title-child {
+    align-self: stretch;
+    position: relative;
+    font-size: 28px;
+    letter-spacing: -0.4px;
+    line-height: 34px;
+    color: rgba(60, 60, 67, 0.6);
+}
+
+
+@media (min-width: 1200px) and (max-width: 1295px) {
+
+    .frame-wrapper {
+        padding: 24px;
+    }
+
+    .title-parent {
+        font-size: 48px;
+        line-height: 125%;
+    }
+
+    .title-child {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .container-card {
+        gap: 32px;
+    }
+
+
+ 
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .container-card {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .title-parent {
+        font-size: 48px;
+        line-height: 125%;
+    }
+
+    .title-child {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container-card {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 24px 24px;
+    }
+
+    .frame-wrapper {
+        padding: 24px;
+    }
+
+    .title-parent {
+        font-size: 48px;
+        line-height: 125%;
+    }
+
+    .title-child {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 480px) {
+    .about {
+        padding: 0px 24px 24px;
+    }
+
+    .container-card {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 24px 24px;
+    }
+
+    .frame-wrapper {
+        padding: 24px;
+    }
+
+    .number {
+        line-height: 41px;
+        align-items: center;
+    }
+
+    .title-parent {
+        font-size: 34px;
+        line-height: 41px;
+        gap: 8px;
+    }
+
+    .title-child {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .container-card {
+        gap: 24px;
+    }
+
+    .description {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .frame-group {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 430px) {
+    .about {
+        padding: 0px 24px 24px;
+    }
+
+    .container-card {
+        /* display: grid;
+        grid-template-columns: auto auto; */
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .frame-wrapper {
+        padding: 24px;
+    }
+
+    .number {
+        line-height: 41px;
+        align-items: center;
+    }
+
+    .title-parent {
+        font-size: 34px;
+        line-height: 41px;
+        gap: 8px;
+    }
+
+    .title-child {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .container-card {
+        gap: 24px;
+    }
+
+    .description {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .frame-group {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .frame-wrapper {
+        border-radius: 18px;
+    }
+
+    .about {
+        gap: 24px;
+    }
+}

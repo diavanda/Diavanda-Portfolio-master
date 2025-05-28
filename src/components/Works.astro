@@ -1,0 +1,64 @@
+---
+import '../styles/global.css'
+import '../styles/Works.css'
+import Display from '/Portfolio-Video.mp4'
+---
+
+<script src="../scripts/menu.js"></script>
+
+<section id="works" class="works">
+
+    <div class="text">
+        <div class="separator">
+        </div>
+        <b class="my-works-title">MY WORKS</b>
+        <div class="separator">
+        </div>
+    </div>
+
+    <div class="works-frame-1">
+
+        <div class="works-screen-video">
+            <video autoplay muted loop>
+            <source src={Display} type='video/mp4' />
+            </video>
+        </div>
+        
+        <img class="works-screen" alt="Screen" src="App-1/Light.png"
+        onmouseover=";this.src='App-1/Dark.png'"  onmouseout="this.src='App-1/Light.png'">
+        
+        <img class="works-screen" alt="Screen" src="App-2/Light.png"
+        onmouseover=";this.src='App-2/Dark.png'"  onmouseout="this.src='App-2/Light.png'">
+     
+        <img id="span-480" class="works-screen" alt="Screen" src="App-3/Light.png"
+        onmouseover=";this.src='App-3/Dark.png'"  onmouseout="this.src='App-3/Light.png'">
+
+        <img class="works-screen" alt="Screen" src="App-4/Light.png"
+        onmouseover=";this.src='App-4/Dark.png'"  onmouseout="this.src='App-4/Light.png'">
+    
+        <img class="works-screen" alt="Screen" src="App-5/Light.png"
+        onmouseover=";this.src='App-5/Dark.png'"  onmouseout="this.src='App-5/Light.png'">
+    
+        <img class="works-screen" alt="Screen" src="App-6/Light.png"
+        onmouseover=";this.src='App-6/Dark.png'"  onmouseout="this.src='App-6/Light.png'">
+        
+        <img id="span-480" class="works-screen" alt="Screen" src="App-7/Light.png"
+        onmouseover=";this.src='App-7/Dark.png'"  onmouseout="this.src='App-7/Light.png'">
+        
+        <img id="position" class="works-screen" alt="Screen" src="App-10/Mariposign.png"
+        onmouseover=";this.src='App-10/Dark.png'"  onmouseout="this.src='App-10/Mariposign.png'">
+        
+        <img id="tab-vertical" class="works-screen" alt="Screen" src="App-11/Light.png"
+        onmouseover=";this.src='App-11/Dark.png'"  onmouseout="this.src='App-11/Light.png'">
+        
+        <div class="works-screen-vertical">
+            <img class="works-screen-vertical-child" alt="Screen" src="App-8/Dark.png"
+            onmouseover=";this.src='App-8/Light.png'"  onmouseout="this.src='App-8/Dark.png'">       
+        </div>
+
+        <img class="works-screen-horizontal" alt="Screen" src="App-9/Light.png"
+        onmouseover=";this.src='App-9/Dark.png'"  onmouseout="this.src='App-9/Light.png'">
+        
+    </div>
+
+</section>

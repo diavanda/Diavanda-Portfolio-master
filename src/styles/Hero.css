@@ -1,0 +1,136 @@
+.allan-febrian-diavanda {
+    position: relative;
+    letter-spacing: -0.4px;
+    line-height: 41px;
+}
+.a-uiux-designer {
+    position: relative;
+    letter-spacing: -0.4px;
+    line-height: 41px;
+    color: rgba(60, 60, 67, 0.6);
+    display: inline-block;
+    width: 100%;
+}
+.caption-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.button {
+    border-radius: 12px;
+    background-color: #3c3c3c;
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.05) inset, -1px 0px 1px rgba(0, 0, 0, 0.05) inset, 0px 1px 1px rgba(0, 0, 0, 0.05) inset, 1px 0px 1px rgba(0, 0, 0, 0.05) inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+    /* display: flex;
+    flex-direction: row; */
+    padding: 14px 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: -0.4px;
+    line-height: 22px;
+    transition-duration: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    z-index: 2;
+}
+
+.splinetool {
+    position: absolute;
+    margin: 0 !important;
+    left: 0px;
+    width: 100%;
+    height: 116%;
+    overflow: visible;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 20px;
+}
+
+.container {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 40px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 724px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 34px;
+    color: #3c3c3c;
+    font-family: Inter;
+}
+
+
+
+@media (max-width: 768px) {
+    .allan-febrian-diavanda {
+        font-size: 28px;
+    }
+
+    .a-uiux-designer {
+        font-size: 28px;
+    }
+
+    .splinetool {
+        padding-top: 32px;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .allan-febrian-diavanda {
+        font-size: 22px;
+    }
+
+    .a-uiux-designer {
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        border-radius: 18px;
+    }
+}
